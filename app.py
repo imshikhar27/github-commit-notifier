@@ -1,14 +1,18 @@
 from flask import Flask, request
 import smtplib
 from email.message import EmailMessage
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
 # ----------------------------
 # Email Configuration
 # ----------------------------
-SENDER_EMAIL = "imshikhar27@gmail.com"
-APP_PASSWORD = "zykl yakz tuyg boph"
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+APP_PASSWORD = os.getenv("APP_PASSWORD")
 
 RECIPIENTS = [
     "imshikhar27@gmail.com"
