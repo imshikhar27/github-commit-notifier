@@ -1,0 +1,3 @@
+services:
+  calculator:
+    image: imshikhar27/calculator-app:latest
