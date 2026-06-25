@@ -21,3 +21,9 @@ jobs:
 
       - name: Run Pipeline
         run: python pipeline.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: calculator-build
+          path: dist/artifact.zip

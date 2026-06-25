@@ -31,8 +31,6 @@ if lint_result.returncode != 0:
 
 print("Lint Passed")
 
-print("\nPipeline Successful")
-
 print("\nBuilding Artifact...")
 
 # Clean old build folder
@@ -65,3 +63,5 @@ shutil.make_archive(
 )
 
 print("Artifact Created")
+
+print("\nPipeline Successful")
