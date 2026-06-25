@@ -16,7 +16,7 @@ APP_PASSWORD = os.getenv("APP_PASSWORD")
 
 RECIPIENTS = [
     "imshikhar27@gmail.com",
-    "bainganidarshan@gmail.com"
+    "pradeep_mangipudi@epam.com"
 ]
 
 
