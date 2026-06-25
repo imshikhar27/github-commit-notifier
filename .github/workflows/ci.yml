@@ -21,6 +21,9 @@ jobs:
 
       - name: Run Pipeline
         run: python pipeline.py
+      
+      - name: Build Docker Image
+        run: docker build -t calculator-app .
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
