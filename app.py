@@ -15,7 +15,8 @@ SENDER_EMAIL = os.getenv("SENDER_EMAIL")
 APP_PASSWORD = os.getenv("APP_PASSWORD")
 
 RECIPIENTS = [
-    "imshikhar27@gmail.com"
+    "imshikhar27@gmail.com",
+    "bainganidarshan@gmail.com"
 ]
 
 
