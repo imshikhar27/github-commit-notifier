@@ -29,7 +29,10 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       
       - name: Build Docker Image
-        run: docker build -t calculator-app .
+        run: docker build -t imshikhar27/calculator-app:latest .
+
+      - name: Push Docker Image
+        run: docker push imshikhar27/calculator-app:latest
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
